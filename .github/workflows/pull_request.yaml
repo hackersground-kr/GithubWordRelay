@@ -1,0 +1,104 @@
+name: 'PR Automation'
+
+on:
+  pull_request:
+    types: [ opened, reopened, ready_for_review ]
+
+permissions: write-all
+
+jobs:
+  comment-job:
+    name: 'Comment Job'
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Create comment
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const creator = context.payload.sender.login
+          const opts = github.rest.issues.listForRepo.endpoint.merge({
+            ...context.issue,
+            creator,
+            state: 'all'
+          })
+          const issues = await github.paginate(opts)
+
+          for (const issue of issues) {
+            if (issue.number === context.issue.number) {
+              continue
+            }
+
+            if (issue.pull_request) {
+              return // Creator is already a contributor.
+            }
+          }
+
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: `👋 Welcome!
+
+            처음 오셨군요!
+            아직 익숙하지 않으실텐데요, 먼저 여기 [가이드](Policy.md)를 한번 봐주세요!
+
+            모르는게 있으면 언제든 편하게 질문해주시고 끝까지 잘 마무리 해 보아요~!`
+          })
+
+    - name: Apply assignee
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const creator = context.payload.sender.login
+
+          github.rest.issues.addAssignees({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            assignees: [ creator ]
+          })
+
+    - name: Apply labels
+      uses: actions/github-script@v7
+      with:
+        script: |
+          github.rest.issues.addLabels({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            labels: ['HackersGround_240406']
+          })
+
+    - name: Check teams
+      shell: pwsh
+      run: |
+        # Check Modules
+        if (!(Get-Module -ListAvailable -Name powershell-yaml)) {
+          Install-Module powershell-yaml -Confirm:$False -Force
+        }
+
+        # Load Module
+        Import-Module powershell-yaml
+
+        [string] $reviewers = '${{ vars.REVIEWERS }}'
+        $yaml = ConvertFrom-Yaml -Yaml $reviewers -AllDocuments
+
+        [string] $reviewers = $yaml.GetEnumerator() |
+          Where-Object -Property Value -Value '${{ github.actor }}' -Contains |
+          Select-Object -Property Key |
+          Join-String -Separator ',' -Property Key -SingleQuote
+
+        [System.Environment]::SetEnvironmentVariable('TARGET_REVIEWERS', $reviewers)
+
+    - name: Request reviewers
+      uses: actions/github-script@v7
+      with:
+        script: |
+          github.rest.pulls.requestReviewers({
+            pull_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            reviewers: [ ${{ env.TARGET_REVIEWERS }} ]
+          })
