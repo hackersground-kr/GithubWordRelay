@@ -82,15 +82,20 @@ jobs:
         # Load Module
         Import-Module powershell-yaml
 
+        #[string] $reviewers = Get-Content -Path ${{ github.action_path }}/.github/auto_assign.yml -Raw
         [string] $reviewers = '${{ vars.REVIEWERS }}'
         $yaml = ConvertFrom-Yaml -Yaml $reviewers -AllDocuments
 
         [string] $reviewers = $yaml.GetEnumerator() |
           Where-Object -Property Value -Value '${{ github.actor }}' -Contains |
-          Select-Object -Property Key |
-          Join-String -Separator ',' -Property Key -SingleQuote
+          Select-Object -Property Value -Unique -ExpandProperty Value |
+          ? { $_.Split([Environment]::NewLine)} |
+          ? { $_ -ne '${{ github.actor }}' } |
+          Join-String -Separator ',' -SingleQuote
 
-        [System.Environment]::SetEnvironmentVariable('TARGET_REVIEWERS', $reviewers)
+        $githubEnv = [System.Environment]::GetEnvironmentVariable('GITHUB_ENV')
+        Write-Output TARGET_REVIEWERS=$reviewers >> $githubEnv
+        #[System.Environment]::SetEnvironmentVariable('TARGET_REVIEWERS', $reviewers)
 
     - name: Request reviewers
       uses: actions/github-script@v7
