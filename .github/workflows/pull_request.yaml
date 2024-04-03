@@ -71,6 +71,13 @@ jobs:
             labels: ['HackersGround_240406']
           })
 
+    - name: Checkout auto-reviewer file
+      uses: actions/checkout@v4
+      with:
+        sparse-checkout: |
+          .github/auto_assign.yml
+        sparse-checkout-cone-mode: false
+
     - name: Check teams
       shell: pwsh
       run: |
@@ -82,8 +89,7 @@ jobs:
         # Load Module
         Import-Module powershell-yaml
 
-        #[string] $reviewers = Get-Content -Path ${{ github.action_path }}/.github/auto_assign.yml -Raw
-        [string] $reviewers = '${{ vars.REVIEWERS }}'
+        [string] $reviewers = Get-Content -Path '.github/auto_assign.yml' -Raw
         $yaml = ConvertFrom-Yaml -Yaml $reviewers -AllDocuments
 
         [string] $reviewers = $yaml.GetEnumerator() |
