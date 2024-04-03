@@ -2,7 +2,7 @@ name: 'PR Automation'
 
 on:
   pull_request:
-    types: [ opened, reopened, ready_for_review ]
+    types: [ opened, ready_for_review ]
 
 permissions: write-all
 
@@ -42,7 +42,7 @@ jobs:
             body: `👋 Welcome!
 
             처음 오셨군요!
-            아직 익숙하지 않으실텐데요, 먼저 여기 [가이드](Policy.md)를 한번 봐주세요!
+            아직 익숙하지 않으실텐데요, 먼저 여기 [가이드](https://github.com/hackersground-kr/GithubWordRelay/blob/main/Policy.md)를 한번 봐주세요!
 
             모르는게 있으면 언제든 편하게 질문해주시고 끝까지 잘 마무리 해 보아요~!`
           })
