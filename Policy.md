@@ -127,14 +127,14 @@ Git은 중앙 서버 컴퓨터와 여러 개의 컴퓨터들이 연결되어 모
 
 ### Git 기본 용어
 
-|      명령어      | 내용                                                                                                                                                               |
-| :--------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Repository(레포) | 저장소, 저장소는 히스토리, 태그, 소스의 가지치기 혹은 Branch에 따라 버전을 저장하며, 작업자가 변경한 모든 히스토리를 확인 가능                                     |
-|   Working Tree   | 저장소를 바라보는 작업자의 현재 시점, 우리 눈에 보이는 디렉토리                                                                                                    |
-|   Staging Area   | 저장소에 Commit하기 전에 Commit을 준비하는 위치                                                                                                                    |
-|       Head       | 현재 작업중인 Branch                                                                                                                                               |
-|      Branch      | 가지 또는 분기점이라고 함. 작업을 할 때 현재 상태(버전)을 복사하여 Branch 만들고, Branch에서 작업해서 새 버전을 만들고, 작업이 끝났을 때 Merge하여 버전을 업데이트 |
-|      Merge       | 다른 Branch의 내용을 현재 Branch로 가져와 합치는 작업을 의미                                                                                                       |
+|      명령어       | 내용                                                                                                                                                               |
+| :---------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Repository (레포) | 저장소, 저장소는 히스토리, 태그, 소스의 가지치기 혹은 Branch에 따라 버전을 저장하며, 작업자가 변경한 모든 히스토리를 확인 가능                                     |
+|   Working Tree    | 저장소를 바라보는 작업자의 현재 시점, 우리 눈에 보이는 디렉토리                                                                                                    |
+|   Staging Area    | 저장소에 Commit하기 전에 Commit을 준비하는 위치                                                                                                                    |
+|       Head        | 현재 작업중인 Branch                                                                                                                                               |
+|      Branch       | 가지 또는 분기점이라고 함. 작업을 할 때 현재 상태(버전)을 복사하여 Branch 만들고, Branch에서 작업해서 새 버전을 만들고, 작업이 끝났을 때 Merge하여 버전을 업데이트 |
+|       Merge       | 다른 Branch의 내용을 현재 Branch로 가져와 합치는 작업을 의미                                                                                                       |
 
 ---
 
@@ -186,7 +186,24 @@ Git은 중앙 서버 컴퓨터와 여러 개의 컴퓨터들이 연결되어 모
 | git merge  | 개별 branch에서 마친 작업을 master branch(main 최종본)으로 병합                                                                                                                                                                                                                                                                            |
 
 - git add 옵션
+
   - git add . : 현재 디렉토리 모든 변경 내용 staging area 등록 - 디렉토리 내에서 파일 하나만 변경 했을 땐 비추
   - git add [업로드 하고 싶은 파일 혹은 디렉토리 경로] : 해당 파일 혹은 디렉토리 변경 내용 staging area 등록
   - git add -A : 작업 디렉토리 모든 변경 내용 staging area 등록
   - git add -p : 터미널에서 staging area로 넘길 파일 선택 가능
+
+  ***
+
+  #### 참고 레퍼런스
+
+  1. [Git 참고 문서 1](https://medium.com/@psychet_learn/git-%EC%82%AC%EC%9A%A9%EB%B2%95-1%EA%B0%95-git%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80-340438d9a69f)
+  2. [Git 참고 문서 2](https://yanacoding.tistory.com/entry/Git-%EA%B9%83git%EA%B3%BC-%EA%B9%83%ED%97%88%EB%B8%8Cgithub%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80#google_vignette)
+  3. [GitHub 참고 문서](https://yanacoding.tistory.com/entry/Git-%EA%B9%83git%EA%B3%BC-%EA%B9%83%ED%97%88%EB%B8%8Cgithub%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80#google_vignette)
+  4. [GitHub 이모티콘 참고 문서](https://overcome-the-limits.tistory.com/entry/%ED%98%91%EC%97%85-%ED%98%91%EC%97%85%EC%9D%84-%EC%9C%84%ED%95%9C-%EA%B8%B0%EB%B3%B8%EC%A0%81%EC%9D%B8-git-%EC%BB%A4%EB%B0%8B%EC%BB%A8%EB%B2%A4%EC%85%98-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0)
+  5. [Git 공식 사이트 한글 메뉴얼](https://git-scm.com/book/ko/v2)
+  6. [Working Tree](https://devmango.tistory.com/113)
+  7. [Github 완전기초 사용방법: add, commit, push, pull](https://chancoding.tistory.com/76)
+  8. [git switch](https://blog.outsider.ne.kr/1505)
+  9. [git branch](https://git-scm.com/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)
+  10. [git branch와 merge](https://velog.io/@marksen/Git-Branch%EC%99%80-Merge)
+  11. [git PR](https://holika.tistory.com/entry/Git-%EC%82%BD%EC%A7%88%EA%B8%B0%EB%A1%9D-PR%EC%9D%84-%EC%98%AC%EB%A6%AC%EB%8B%A4-Pull-Request%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C)
