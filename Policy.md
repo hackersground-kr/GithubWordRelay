@@ -1,91 +1,235 @@
-# 정책 관련
+# 😊 정책 관련
 
-### 기본 정책 (공통)
+### 🖥️ 기본 정책 (공통)
 
-* 팀전으로 채택한 경우, 한팀 당 최대 인원은 4명입니다.
-* `git` 명령어 사용 시 CLI로만 사용하도록 강제하지 않습니다.
-* 참가자가 머리위에 `?`를 띄우고 있는 경우 언제든 편하게 물어볼 수 있도록 실습 시 배경음악을 깔아놓습니다(잔잔한 BGM?)
-
+- 팀전으로 채택한 경우, 한팀 당 최대 인원은 4명입니다.
+- `git` 명령어 사용 시 CLI로만 사용하도록 강제하지 않습니다.
+- 참가자가 머리위에 `?`를 띄우고 있는 경우 언제든 편하게 물어볼 수 있도록 실습 시 배경음악을 깔아놓습니다(잔잔한 BGM?)
 
 ---
 
-
-### Merge 정책 (팀별 택 1)
+### 🖥️ Merge 정책 (팀별 택 1)
 
 1. 모든 리뷰어에게 Approve를 받은 후 PR 올린이가 스스로 Merge 진행
 2. 모든 리뷰어에게 Approve를 받은 후 마지막에 Approve 한 리뷰어가 Merge 진행
 3. 숫자를 정해두고 최소 n명 이상에게 Approve를 받은 후 스스로 Merge 진행
 4. 숫자를 정해두고 최소 n명 이상에게 Approve를 받은 후 이끌이가 Merge 진행
 
-
 ---
 
-
-### Merge 방식 (팀별 택 1)
+### 🖥️ Merge 방식 (팀별 택 1)
 
 1. PR에 올라간 모든 커밋을 그대로 유지하는 "Create a merge commit"
 2. PR에 올라간 모든 커밋을 하나로 합치는 "Squash and merge"
 3. "Rebase and merge" 사용 안함
 
-
 ---
 
+### 🖥️ 커밋 컨벤션 (팀별 택 1)
 
-### 커밋 컨벤션 (팀별 택 1)
+<ins>팀별로 커밋시 필요한 커밋 메세지 구조(제목,내용)를 정해주세요</ins>
 
 1. 스스로 알아서 짓기
-1. 기본 커밋 컨벤션 이용하기 [참고 블로그(@shin6403)](https://velog.io/@shin6403/Git-git-%EC%BB%A4%EB%B0%8B-%EC%BB%A8%EB%B2%A4%EC%85%98-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0)
-1. 스마트 커밋 컨벤션을 이용하기(JIRA 활용 시) [참고 블로그(@pish11010)](https://velog.io/@pish11010/Jira-Cloud-Smart-commit%EC%9D%84-%EC%9C%84%ED%95%9C-Github-%EC%97%B0%EB%8F%99)
-
-
-## GitHub으로 끝말잇기 하는 방법
-
-GitHub으로 끝말잇기를 합니다. 예시를 살펴보겠습니다.  
-
-`해커그라운드 -> 드라마 -> 마블링 -> 링피트` 현재 예시는 단어가 4번 나왔습니다. 모두가 알고 있는 끝말잇기죠. 4회차로 진행됐습니다.  
-
-끝말잇기 회차별로 사용되는 `1단어는 1PR`으로 깃헙에 붙여서 진행해보겠습니다. 이해가 어렵다구요? 아래 개념을 읽어주세요. 
-
-
-## 실습에 필요한 개념 알아보기
-
-### Git이란? 
-* [Git 참고 문서 1](https://medium.com/@psychet_learn/git-%EC%82%AC%EC%9A%A9%EB%B2%95-1%EA%B0%95-git%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80-340438d9a69f)
-* [Git 참고 문서 2](https://yanacoding.tistory.com/entry/Git-%EA%B9%83git%EA%B3%BC-%EA%B9%83%ED%97%88%EB%B8%8Cgithub%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80#google_vignette)
-
-
-### GitHub이란? 
-* [GitHub 참고 문서](https://yanacoding.tistory.com/entry/Git-%EA%B9%83git%EA%B3%BC-%EA%B9%83%ED%97%88%EB%B8%8Cgithub%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80#google_vignette)
-
-
---- 
-
-## GitHub 완전기초 사용방법
-
-* [Github 완전기초 사용방법: add, commit, push, pull](https://chancoding.tistory.com/76)
-* [git switch](https://blog.outsider.ne.kr/1505)
-* [git branch](https://git-scm.com/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)
-### add
-
-### commit
-
-### push
-
-### pull
-
-### switch
-
-### branch
+2. 기본 커밋 컨벤션 이용하기 [참고 블로그(@shin6403)](https://velog.io/@shin6403/Git-git-%EC%BB%A4%EB%B0%8B-%EC%BB%A8%EB%B2%A4%EC%85%98-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0)
+3. 스마트 커밋 컨벤션을 이용하기(JIRA 활용 시) [참고 블로그(@pish11010)](https://velog.io/@pish11010/Jira-Cloud-Smart-commit%EC%9D%84-%EC%9C%84%ED%95%9C-Github-%EC%97%B0%EB%8F%99)
 
 ---
 
-## Pull Request가 뭐에요?
+# 😁 GitHub으로 끝말잇기 하는 방법
 
-*[git pr](https://holika.tistory.com/entry/Git-%EC%82%BD%EC%A7%88%EA%B8%B0%EB%A1%9D-PR%EC%9D%84-%EC%98%AC%EB%A6%AC%EB%8B%A4-Pull-Request%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C)
+GitHub으로 끝말잇기를 합니다. 예시를 살펴보겠습니다.
 
---- 
+`해커그라운드 -> 드라마 -> 마블링 -> 링피트` 현재 예시는 단어가 4번 나왔습니다. 모두가 알고 있는 끝말잇기죠. 4회차로 진행됐습니다.
 
-## Merge하는 방법
+끝말잇기 회차별로 사용되는 `1단어는 1PR`으로 깃헙에 붙여서 진행해보겠습니다. 이해가 어렵다면? 아래 개념을 읽어주세요.
 
-* [git branch와 merge](https://velog.io/@marksen/Git-Branch%EC%99%80-Merge)
+<ins>[실습 흐름 설명(1명이 1단어 PR)]</ins>
+
+- GitHub 이용 시
+
+  - 새 Branch 만들기(생략가능) -> `Game.txt` 파일 수정 -> Commit & Push -> Pull Request -> Merge
+
+- Local GIT 이용 시
+
+  - (최초) Clone -> 새 Branch 만들기 -> `Game.txt` 파일 수정 -> Add -> Commit -> Push -> Pull Request -> Merge
+
+  - (이후) Main Branch로 변경 -> pull -> 새 Branch 만들기 -> `Game.txt` 파일 수정 -> Add -> Commit -> Push -> Pull Request -> Merge
+
 ---
+
+# 👌 실습에 필요한 개념 알아보기
+
+### 1. Git이란?
+
+_하나의 파일을 동시에 작업할 때 서로의 작업물을 어떻게 누락없이 합칠 수 있을까?_
+
+_팀원이 코드를 바꿔서 새 버전으로 올렸다는데 어디가 바뀐거지?_
+
+_잘못 작업한 작업물로 덮어썼거나, 업데이트 하지 못할때 어느시기에 백업을 해둬야 할까?_
+
+**-> 모든 고민을 해결해주는 것이 Git입니다**
+
+- Git 이란?
+
+  - 프로그램 등의 소스 코드 관리를 위한 분산 버전 관리 시스템 (위키백과)
+
+  - 컴퓨터 파일의 변경사항을 추적하고 여러명의 사용자들 간에 파일에 대한 작업을 조율하는데 사용됨
+
+  - 실시간으로 수정되는 파일의 버전을 관리함
+
+- 분산 버전 관리 시스템
+
+  - 여러명의 개발자가 특정 프로젝트를 자신의 컴퓨터로 협업하여 개발하면서 버전을 관리할 수 있는 시스템
+
+  - 협업시에 한명이 중앙서버(Git)에 버전 업데이트를 하면, Git이 팀원 모두의 컴퓨터에서 업데이트 된 버전으로 볼 수 있게 함
+
+  <ins> 여러 명의 개발자가 하나의 소프트웨어 개발 프로젝트에 참여할 때, 소스 코드를 관리하는데 주로 사용됨.</ins>
+
+---
+
+### 2. 그래서, Git 왜 해야해?
+
+대부분의 IT회사에서 Git 아이디를 요구하고, 협업 경험과 Git에 대한 숙련도를 체크하려는 회사가 늘고 있다!
+
+**지금부터 나만의 포트폴리오를 Git으로 만들자!**
+
+---
+
+### 3. Git의 버전 관리 방법
+
+*Git*은 중앙 서버 컴퓨터와 여러 개의 컴퓨터들이 연결되어 모두 같은 버전의 데이터베이스를 유지한다
+
+버전은 사용자가 업데이트(커밋)할 때 마다 자동으로 생성된다
+
+=> 여러 컴퓨터의 최신버전 유지가 가능하게 된다!
+
+---
+
+### 4. Git의 장점
+
+인터넷 연결이 되지 않는 곳에서도 개발 가능하며, 중앙 저장소가 삭제되어도 원상복구가 가능하다
+
+개발자가 각자의 Branch에서 개발하면 이를 하나의 작업물로 합치는 과정(Merge)을 통해 병렬 개발이 가능하다 **(오늘 해볼 실습!!)**
+
+---
+
+### 5. Git을 사용하기 위한 소프트웨어
+
+- Git CLI or GUI
+
+  - CLI(Command Line Interface, 명령줄 인터페이스) : Terminal 등에서 명령어를 통해 제공되는 여러가지 기능을 담은 소프트웨어
+
+  - GUI(Graphic User Interface) : 그래픽으로 제공되는 여러가지 기능을 담은 소프트웨어
+
+  <ins> CLI, GUI 중 정답은 없으니, 각자 취향에 따라 선택해 사용해주시면 됩니다</ins>
+
+---
+
+### 6. GitHub이란?
+
+깃(Git)을 사용하는 프로젝트를 지원하는 웹 호스팅 서비스
+
+깃이 애니팡이라면 / 깃허브는 애니팡 서버
+
+**깃 사용시에 서버를 자체적으로 구축도 가능하지만 GitHub 서버를 이용하는 것이 좋다!**
+
+---
+
+# 👌 Git, GitHub 완전기초 사용방법
+
+### 1. Git 기본 용어
+
+|      명령어       | 내용                                                                                                                                                               |
+| :---------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Repository (레포) | 저장소, 저장소는 히스토리, 태그, 소스의 가지치기 혹은 Branch에 따라 버전을 저장하며, 작업자가 변경한 모든 히스토리를 확인 가능                                     |
+|   Working Tree    | 저장소를 바라보는 작업자의 현재 시점, 우리 눈에 보이는 디렉토리                                                                                                    |
+|   Staging Area    | 저장소에 Commit하기 전에 Commit을 준비하는 위치                                                                                                                    |
+|       Head        | 현재 작업중인 Branch                                                                                                                                               |
+|      Branch       | 가지 또는 분기점이라고 함. 작업을 할 때 현재 상태(버전)을 복사하여 Branch 만들고, Branch에서 작업해서 새 버전을 만들고, 작업이 끝났을 때 Merge하여 버전을 업데이트 |
+|       Merge       | 다른 Branch의 내용을 현재 Branch로 가져와 합치는 작업을 의미                                                                                                       |
+
+---
+
+### 2. GitHub 사용방법
+
+| 명령어 | 내용                                                                                                                                                                                                                                                                                  |
+| :----: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|  add   | 작업 위치 폴더에 작업한 파일이 있을 경우 add를 통해서 staging area(commit 위치)로 옮길 수 있음                                                                                                                                                                                        |
+| commit | 현재 변경된 작업 상태를 점검을 마치면 확정하고 저장소에 저장하는 작업                                                                                                                                                                                                                 |
+|  push  | commit 이력을 Repository에 동기화할 때 사용 (원격 저장소로 push)                                                                                                                                                                                                                      |
+|  pull  | 저장소(Github) 변경 사항(이력)을 받아옴 - 누군가 새로운 변경 사항을 업데이트 했을 수 있기 때문                                                                                                                                                                                        |
+| switch | 현재 브랜치에서 작업하기 원하는 브랜치로 이동할 때 사용                                                                                                                                                                                                                               |
+| Branch | 여러 협업자와 작업할 시, 각자 자신이 맡은 작업을 수행하기 위해 Branch(가지)를 만들어 작업하게 됨. 브랜치를 나누지 않으면, 여러 사람이 하나에 commit 할 경우에 충돌이 날 수 있음. 자신이 맡은 작업이 끝나면 PR 후에 분기를 시작한 곳(최종본, ex, `main`)에 내 Branch를 merge해서 완성. |
+
+- Pull Request
+
+  - 저장소 내용을 내가 가져와서(Clone) 업데이트한 뒤에,
+
+    **"이 부분 제가 이렇게 바꿨는데, 제가 작업한 부분 피드백해주세요!" 라는 요청을 보내는 것.**
+
+  - 피드백 후 최종본 브랜치에 merge하면 최종본에 반영이 되는 것
+
+  - 피드백 방법
+
+    - Comment (이 부분 좀 이상한데 체크해줘 , 코드 한줄에 대한 comment/코드 전체에 대한 comment 존재)
+
+    - Approve (나는 이거 맞는 것 같아, 승인!)
+
+    - Request changes (변경을 요청하는 것, 승인 거부!)
+
+  **!!피드백 시에 타인을 무시하거나, 비방하는 말투를 쓰지 않는 것이 중요합니다!!**
+
+- Merge
+
+  - 팀플에서 각자 분배해서 했던 작업(branch에서 했던 작업)을 하나로 합쳐서 최종본(branch에 위치)으로 만드는 작업
+
+  **다 합쳐서 최종본을 만들었다면 사용하지 않는 브랜치는 삭제하자**
+
+---
+
+### 3. Git 기본 명령어
+
+|   명령어   | 내용                                                                                                                                                                                                                                     |
+| :--------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|  git help  | 도움말 기능 (가장 많이 사용하는 21개의 깃 명령어 출력)                                                                                                                                                                                   |
+|  git init  | (저장소 설정 ) git 저장소를 만들게 되면 해당 디렉토리 내에 .git/ 폴더 생성, 현재 작업 중인 브랜치를 의미함. git을 만드는 과정(이 명령어를 입력한 후에야 추가적인 깃 명령어 입력 가능) => clone한 경우에는 git이 있으니까 init이 필요없음 |
+| git status | 저장소 상태 체크. 어떤 파일이 저장소 안에 있는지, 커밋이 필요한 변경사항이 있는지, 현재 저장소의 어떤 브랜치에서 작업하고 있는지 등                                                                                                      |
+| git branch | 새로운 브랜치 생성 (git branch [이름])                                                                                                                                                                                                   |
+|  git add   | staging area에 변경 내용을 추가함. commit전까지 변경 내용을 staging area에 보관하게 됨(표 아래 옵션 O)                                                                                                                                   |
+| git commit | git commit -m "커밋메시지" 명령어로 staging area에 있는 내용 모두를 묶어서 메세지를 붙임. 서버(github)에 올리기 전 상태로, add한 모든 것.                                                                                                |
+|  git log   | 커밋 이력 확인하기                                                                                                                                                                                                                       |
+|  git push  | 로컬 컴퓨터에서 서버로 변경사항을 "push" (commit 후 push)                                                                                                                                                                                |
+|  git pull  | 서버 저장소로부터 최신 버전을 "pull" (서버 저장소의 데이터를 가져와, 현재 브랜치와 merge) (ex. 내 컴퓨터에서 파일을 수정하고 있을 때, 서버의 상태(브랜치 수, push 상태 등) 가 달라질 수 있으니 push 전 pull을 해 줄 수 있음)             |
+| git clone  | 서버 저장소의 데이터를 로컬 컴퓨터(내 노트북)으로 복사 (서버 저장소의 데이터를 그대로 가져옴 , 작업 중이던 내역이 있으면 덮어쓰기 됨!)                                                                                                   |
+| git switch | git switch [브랜치 이름]: 작업하기 원하는 브랜치로 이동                                                                                                                                                                                  |
+| git merge  | 개별 branch에서 마친 작업을 master branch(main 최종본)으로 병합                                                                                                                                                                          |
+
+- git add 옵션
+
+  - git add . : 현재 디렉토리 모든 변경 내용 staging area 등록 - 디렉토리 내에서 파일 하나만 변경 했을 땐 비추
+  - git add [업로드 하고 싶은 파일 혹은 디렉토리 경로] : 해당 파일 혹은 디렉토리 변경 내용 staging area 등록
+  - git add -A : 작업 디렉토리 모든 변경 내용 staging area 등록
+  - git add -p : 터미널에서 staging area로 넘길 파일 선택 가능
+
+- git commit 추가 설명
+
+  - 커밋메세지는 add해서 staging area에 올린 내용을 반영해서 적어야함
+  - staging area에 있는 내용(파일)은 커밋 메시지를 반영한 수정본 파일의 묶음이라고 할 수 있음
+
+    _커밋메세지의 자세한 내용은 위의 커밋 컨벤션 챕터를 활용해주세요_
+
+---
+
+#### ☑️ 참고 레퍼런스
+
+1. [Git 참고 문서 1](https://medium.com/@psychet_learn/git-%EC%82%AC%EC%9A%A9%EB%B2%95-1%EA%B0%95-git%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80-340438d9a69f)
+2. [Git 참고 문서 2](https://yanacoding.tistory.com/entry/Git-%EA%B9%83git%EA%B3%BC-%EA%B9%83%ED%97%88%EB%B8%8Cgithub%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80#google_vignette)
+3. [GitHub 참고 문서](https://yanacoding.tistory.com/entry/Git-%EA%B9%83git%EA%B3%BC-%EA%B9%83%ED%97%88%EB%B8%8Cgithub%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80#google_vignette)
+4. [GitHub 이모티콘 참고 문서](https://overcome-the-limits.tistory.com/entry/%ED%98%91%EC%97%85-%ED%98%91%EC%97%85%EC%9D%84-%EC%9C%84%ED%95%9C-%EA%B8%B0%EB%B3%B8%EC%A0%81%EC%9D%B8-git-%EC%BB%A4%EB%B0%8B%EC%BB%A8%EB%B2%A4%EC%85%98-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0)
+5. [Git 공식 사이트 한글 메뉴얼](https://git-scm.com/book/ko/v2)
+6. [Working Tree](https://devmango.tistory.com/113)
+7. [Github 완전기초 사용방법: add, commit, push, pull](https://chancoding.tistory.com/76)
+8. [git switch](https://blog.outsider.ne.kr/1505)
+9. [git branch](https://git-scm.com/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)
+10. [git branch와 merge](https://velog.io/@marksen/Git-Branch%EC%99%80-Merge)
+11. [git PR](https://holika.tistory.com/entry/Git-%EC%82%BD%EC%A7%88%EA%B8%B0%EB%A1%9D-PR%EC%9D%84-%EC%98%AC%EB%A6%AC%EB%8B%A4-Pull-Request%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C)
