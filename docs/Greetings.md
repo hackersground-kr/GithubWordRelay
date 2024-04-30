@@ -18,14 +18,14 @@ Github 기초/활용 세미나는 현직자분들과 Microsoft 학생 홍보대�
 GitHub 기초 :
 [튜토리얼 문서](https://github.com/hackersground-kr/GithubWordRelay)를 참고해주세요.
 
-GitHub활용 :
+GitHub 활용 :
 [튜토리얼 문서](https://github.com/education/codespaces-project-template-dotnet/tree/main/translations/ko-kr)를 참고해주세요.
 
 <img src="https://github.com/hackersground-kr/GithubWordRelay/blob/main/assets/Github%20%E1%84%8F%E1%85%A1%E1%84%83%E1%85%B3%E1%84%82%E1%85%B2%E1%84%89%E1%85%B3.jpeg" width=70% height=auto alt="session" />
 
 본 행사는 해커그라운드, 클라우드 유랑단 에서 지원 및 진행합니다.
 
-5월 25일 18시에 뵙겠습니다! (장소 추후 공지)
+5월 25일에 뵙겠습니다! (장소 추후 공지)
 
 ---
 
@@ -39,7 +39,7 @@ GitHub활용 :
 
 [모집분야]
 
-- 기술검증단 (5월~해커톤 까지 활동) : 해커톤 팀들의 기술적합성을 판단합니다. ( **사전 Git, 클라우드 배포 과정 공부**를 위한 시간적 여유가 있어야 합니다. - Git은 이번 세미나 기초 강의 정도 난이도 )
+- 기술검증단 (5월~해커톤까지 활동) : 해커톤 팀들의 기술적합성을 판단합니다. ( **사전 Git, 클라우드 배포 과정 공부**를 위한 시간적 여유가 있어야 합니다. - Git은 이번 세미나 기초 강의 정도 난이도 )
 
 - 기획팀 (5월~해커톤 전까지 활동) : 마케팅 전략 수립(공지글, 카드뉴스, 블로그 등) 및 다양한 기획 활동에 참가합니다.
 
