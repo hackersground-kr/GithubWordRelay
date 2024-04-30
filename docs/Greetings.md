@@ -6,20 +6,21 @@ Github 기초/활용 세미나는 현직자분들과 Microsoft 학생 홍보대�
 
 **<u>참가비는 5/18일(행사 일주일 전) 이전에만 환불 가능하며, 이후로는 저녁 식사 및 참여자 파악으로 불가능합니다. 양해 부탁 드리겠습니다.</u>**
 
-# 📄 강의자료
+# 📍프로그램 개요
 
 <img src="https://github.com/hackersground-kr/GithubWordRelay/blob/main/assets/Github%20%E1%84%8F%E1%85%A1%E1%84%83%E1%85%B3%E1%84%82%E1%85%B2%E1%84%89%E1%85%B3.jpeg" width=70% height=auto alt="session" />
 
 강의시작 전 안내를 위해 지금 [해커그라운드 디스코드](https://aka.ms/hg/discord) 에 참여해주세요! 교육프로그램 `기초`와 `활용` 진행 중 어렵거나 쉽다면 운영진 측에서 세션 변경을 도와드리겠습니다.
 
+본 행사는 해커그라운드, 클라우드 유랑단에서 지원 및 진행하고 경북대 컴퓨터학부에서 지원합니다.  
+5월 25일에 뵙겠습니다! (장소 추후 공지)
+
+### 📄 강의자료
 * GitHub 기초 :
 [GitHub으로 끝말잇기 - 튜토리얼 문서 바로가기](https://github.com/hackersground-kr/GithubWordRelay)
 
 * GitHub 활용 :
 [GitHub으로 자기소개페이지 제작하기 - 튜토리얼 문서 바로가기](https://github.com/education/codespaces-project-template-dotnet/tree/main/translations/ko-kr)
-
-본 행사는 해커그라운드, 클라우드 유랑단에서 지원 및 진행하고 경북대 컴퓨터학부에서 지원합니다.  
-5월 25일에 뵙겠습니다! (장소 추후 공지)
 
 ---
 
