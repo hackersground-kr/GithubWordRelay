@@ -8,7 +8,7 @@ Github 기초/활용 세미나는 현직자분들과 Microsoft 학생 홍보대�
 
 # 📍 프로그램 개요
 
-<img src="https://github.com/hackersground-kr/GithubWordRelay/blob/main/assets/Github%20%E1%84%8F%E1%85%A1%E1%84%83%E1%85%B3%E1%84%82%E1%85%B2%E1%84%89%E1%85%B3.jpeg?raw=true" width=70% height=auto alt="session" />
+<img src="https://github.com/hackersground-kr/GithubWordRelay/blob/main/assets/github-seminar-card.jpeg?raw=true" width=70% height=auto alt="session" />
 
 강의시작 전 안내를 위해 지금 [해커그라운드 디스코드](https://aka.ms/hg/discord) 에 참여해주세요! 교육프로그램 `기초`와 `활용` 진행 중 어렵거나 쉽다면 운영진 측에서 세션 변경을 도와드리겠습니다.
 
