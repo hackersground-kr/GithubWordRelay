@@ -8,17 +8,18 @@ Github 기초/활용 세미나는 현직자분들과 Microsoft 학생 홍보대�
 
 # 📄 강의자료
 
-강의시작 전 안내를 위해 지금 [해커그라운드 디스코드](aka.ms/hg/discord) 에 참여해주세요!
+강의시작 전 안내를 위해 지금 [해커그라운드 디스코드](https://aka.ms/hg/discord) 에 참여해주세요!
 
 * GitHub 기초 :
-[튜토리얼 문서](https://github.com/hackersground-kr/GithubWordRelay)를 참고해주세요.
+[GitHub으로 끝말잇기 - 튜토리얼 문서 바로가기](https://github.com/hackersground-kr/GithubWordRelay)
 
 * GitHub 활용 :
-[튜토리얼 문서](https://github.com/education/codespaces-project-template-dotnet/tree/main/translations/ko-kr)를 참고해주세요.
+[GitHub으로 자기소개페이지 제작하기 - 튜토리얼 문서 바로가기](https://github.com/education/codespaces-project-template-dotnet/tree/main/translations/ko-kr)
 
 <img src="https://github.com/hackersground-kr/GithubWordRelay/blob/main/assets/Github%20%E1%84%8F%E1%85%A1%E1%84%83%E1%85%B3%E1%84%82%E1%85%B2%E1%84%89%E1%85%B3.jpeg" width=70% height=auto alt="session" />
 
-본 행사는 해커그라운드, 클라우드 유랑단에서 지원 및 진행하고 경북대 컴퓨터학부에서 지원합니다. 5월 25일에 뵙겠습니다! (장소 추후 공지)
+본 행사는 해커그라운드, 클라우드 유랑단에서 지원 및 진행하고 경북대 컴퓨터학부에서 지원합니다.  
+5월 25일에 뵙겠습니다! (장소 추후 공지)
 
 ---
 
@@ -28,13 +29,15 @@ Github 기초/활용 세미나는 현직자분들과 Microsoft 학생 홍보대�
 
 [모집분야]
 
-- 기술검증단 (5월~해커톤까지 활동) : 해커톤 팀들의 기술적합성을 판단합니다. ( **사전 Git, 클라우드 배포 과정 공부**를 위한 시간적 여유가 있어야 합니다. - Git은 이번 세미나 기초 강의 정도 난이도 )
+- 기술검증단 (5월~해커톤까지 활동)
+  - 해커톤 팀들의 기술적합성을 판단합니다.
+  - **사전 Git, 클라우드 배포 과정 공부**를 위한 시간적 여유가 있어야 합니다.
+  - Git은 이번 세미나 기초 강의 정도 난이도입니다.
 
-- 기획팀 (5월~해커톤 전까지 활동) : 마케팅 전략 수립(공지글, 카드뉴스, 블로그 등) 및 다양한 기획 활동에 참가합니다.
+- 기획팀 (5월~해커톤 전까지 활동)
+  - 마케팅 전략 수립(공지글, 카드뉴스, 블로그 등) 및 다양한 기획 활동에 참가합니다.
 
-기술검증단은 6명, 기획팀은 2명 모집 예정입니다.
-
-**TF팀에게는 해커톤 운영 경험과 함께 금전적인 지원의 혜택이 있습니다.**
+기술검증단은 6명, 기획팀은 2명 모집 예정입니다. **TF팀에게는 해커톤 운영 경험과 함께 소정의 금전적 혜택이 있습니다.**
 
 [모집과정]
 
@@ -45,4 +48,4 @@ Github 기초/활용 세미나는 현직자분들과 Microsoft 학생 홍보대�
 
 2차 : 면접(10분이내)
 
-관심 있으신 분들은 지원동기, 지원분야와 함께 [오픈채팅방 링크](https://open.kakao.com/o/sa1lP2og)로 편하게 연락주시면 감사하겠습니다 :)
+관심 있으신 분들은 개인정보, 지원동기, 지원분야를 작성해 [**해커그라운드 해커톤 TF팀 신청폼**](https://bit.ly/hg-hackathon-tf-recruit)을 작성해주세요 :)
