@@ -68,7 +68,7 @@ jobs:
             issue_number: context.issue.number,
             owner: context.repo.owner,
             repo: context.repo.repo,
-            labels: ['HackersGround_240406']
+            labels: ['HackersGround_240525']
           })
 
     - name: Checkout auto-reviewer file
