@@ -10,6 +10,8 @@
 
 ### 🖥️ Merge 정책 (팀별 택 1)
 
+1,2 번을 추천드립니다
+
 1. 모든 리뷰어에게 Approve를 받은 후 PR 올린이가 스스로 Merge 진행
 2. 모든 리뷰어에게 Approve를 받은 후 마지막에 Approve 한 리뷰어가 Merge 진행
 3. 숫자를 정해두고 최소 n명 이상에게 Approve를 받은 후 스스로 Merge 진행
@@ -19,8 +21,8 @@
 
 ### 🖥️ Merge 방식 (팀별 택 1)
 
-1. PR에 올라간 모든 커밋을 그대로 유지하는 "Create a merge commit"
-2. PR에 올라간 모든 커밋을 하나로 합치는 "Squash and merge"
+1. PR에 올라간 모든 커밋을 그대로 유지하는 "Create a merge commit" - PR하고 수정할 때 했던 커밋들을 그대로 유지하며 Merge.
+2. PR에 올라간 모든 커밋을 하나로 합치는 "Squash and merge" - PR하고 수정할 때 했던 커밋들을 하나로 합쳐서 Merge.
 3. "Rebase and merge" 사용 안함
 
 ---
@@ -35,27 +37,7 @@
 
 ---
 
-# 😁 GitHub으로 끝말잇기 하는 방법
-
-GitHub으로 끝말잇기를 합니다. 예시를 살펴보겠습니다.
-
-`해커그라운드 -> 드라마 -> 마블링 -> 링피트` 현재 예시는 단어가 4번 나왔습니다. 모두가 알고 있는 끝말잇기죠. 4회차로 진행됐습니다.
-
-끝말잇기 회차별로 사용되는 `1단어는 1PR`으로 깃헙에 붙여서 진행해보겠습니다. 이해가 어렵다면? 아래 개념을 읽어주세요.
-
-<ins>[실습 흐름 설명(1명이 1단어 PR)]</ins>
-
-- GitHub 이용 시
-
-  - 새 Branch 만들기(생략가능) -> `Game.txt` 파일 수정 -> Commit & Push -> Pull Request -> Merge
-
-- Local GIT 이용 시
-
-  - (최초) Clone -> 새 Branch 만들기 -> `Game.txt` 파일 수정 -> Add -> Commit -> Push -> Pull Request -> Merge
-
-  - (이후) Main Branch로 변경 -> pull -> 새 Branch 만들기 -> `Game.txt` 파일 수정 -> Add -> Commit -> Push -> Pull Request -> Merge
-
----
+<br></br>
 
 # 👌 실습에 필요한 개념 알아보기
 
@@ -101,7 +83,7 @@ _잘못 작업한 작업물로 덮어썼거나, 업데이트 하지 못할때 �
 
 버전은 사용자가 업데이트(커밋)할 때 마다 자동으로 생성된다
 
-=> 여러 컴퓨터의 최신버전 유지가 가능하게 된다!
+=> 한번에 여러 컴퓨터의 최신버전 유지가 가능하게 된다!
 
 ---
 
@@ -135,6 +117,8 @@ _잘못 작업한 작업물로 덮어썼거나, 업데이트 하지 못할때 �
 
 ---
 
+<br></br>
+
 # 👌 Git, GitHub 완전기초 사용방법
 
 ### 1. Git 기본 용어
@@ -150,16 +134,18 @@ _잘못 작업한 작업물로 덮어썼거나, 업데이트 하지 못할때 �
 
 ---
 
-### 2. GitHub 사용방법
+### 2. Git 사용방법
 
 | 명령어 | 내용                                                                                                                                                                                                                                                                                  |
 | :----: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 |  add   | 작업 위치 폴더에 작업한 파일이 있을 경우 add를 통해서 staging area(commit 위치)로 옮길 수 있음                                                                                                                                                                                        |
 | commit | 현재 변경된 작업 상태를 점검을 마치면 확정하고 저장소에 저장하는 작업                                                                                                                                                                                                                 |
 |  push  | commit 이력을 Repository에 동기화할 때 사용 (원격 저장소로 push)                                                                                                                                                                                                                      |
-|  pull  | 저장소(Github) 변경 사항(이력)을 받아옴 - 누군가 새로운 변경 사항을 업데이트 했을 수 있기 때문                                                                                                                                                                                        |
+|  pull  | 저장소(Github) 변경 사항(이력)을 받아서 바로  복사해 내 로컬 Git에 반영함 - 누군가 새로운 변경 사항을 업데이트 했을 수 있기 때문                                                                                                                                                                                        |
 | switch | 현재 브랜치에서 작업하기 원하는 브랜치로 이동할 때 사용                                                                                                                                                                                                                               |
 | Branch | 여러 협업자와 작업할 시, 각자 자신이 맡은 작업을 수행하기 위해 Branch(가지)를 만들어 작업하게 됨. 브랜치를 나누지 않으면, 여러 사람이 하나에 commit 할 경우에 충돌이 날 수 있음. 자신이 맡은 작업이 끝나면 PR 후에 분기를 시작한 곳(최종본, ex, `main`)에 내 Branch를 merge해서 완성. |
+| fetch | pull 과 다르게 저장소(Github) 변경 사항(이력)을 받기만 하고, 변경 데이터를 로컬 Git에 적용시키지 않음. |
+| remote repository | GitHub과 연결된 원격 저장소, 로컬과 연결해서 사용함. |
 
 - Pull Request
 
@@ -233,3 +219,5 @@ _잘못 작업한 작업물로 덮어썼거나, 업데이트 하지 못할때 �
 9. [git branch](https://git-scm.com/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)
 10. [git branch와 merge](https://velog.io/@marksen/Git-Branch%EC%99%80-Merge)
 11. [git PR](https://holika.tistory.com/entry/Git-%EC%82%BD%EC%A7%88%EA%B8%B0%EB%A1%9D-PR%EC%9D%84-%EC%98%AC%EB%A6%AC%EB%8B%A4-Pull-Request%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C)
+12. [git fetch 와 pull](https://www.freecodecamp.org/korean/news/git-fetch-vs-pull/)
+13. [git remote](https://m.blog.naver.com/hisukdory/220766885707)
