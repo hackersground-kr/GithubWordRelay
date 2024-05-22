@@ -5,7 +5,6 @@
 - GIT 기본 사용 방법에 익숙해지기
 - 왜 Branch를 사용하는지 이해하기
 - Pull Request(Merge Request) 생성 방법 이해하기
-- Conflict 경험하기
 
 ---
 
@@ -58,8 +57,11 @@ GitHub으로 끝말잇기를 합니다. 예시를 살펴보겠습니다.
 
 - Local GIT 이용 시 (차기 차례일 때)
 
-  - (최초) Clone -> 새 Branch 만들기 -> 원격 저장소 와 연결 -> 만든 Branch로 switch -> `Game.txt` 파일 수정 -> Add -> Commit -> Push -> Pull Request -> Merge(Main Branch에 수정사항이 반영됨) -> 만든 Branch를 삭제해주세요.
+  - (최초) Clone -> 새 Branch 만들기 -> 원격 저장소 와 연결 -> 만든 Branch로 switch -> `Game.txt` 파일 수정 -> Add -> Commit -> Push -> Pull Request -> Merge(Main Branch에 수정사항이 반영됨)
 
-  - (이후) Main Branch로 변경 -> pull(Main의 파일을 받아와서 로컬에 저장합니다) -> 새 Branch 만들기 -> 원격 저장소 와 연결 -> 만든 Branch로 switch -> `Game.txt` 파일 수정 -> Add -> Commit -> Push -> Pull Request -> Merge -> 만든 Branch를 삭제해주세요.
+  - (이후 다시 내 차례가 돌아오면) Main Branch로 변경 -> pull(Main의 파일을 받아와서 로컬에 저장합니다) -> 만들어둔 내 Branch로 이동하기 -> `Game.txt` 파일 수정 -> Add -> Commit -> Push -> Pull Request -> Merge
+
+- 실습이 모두 종료되면,
+  - 자신이 만든 branch를 삭제합니다.
 
 ---
