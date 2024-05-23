@@ -57,11 +57,10 @@ GitHub으로 끝말잇기를 합니다. 예시를 살펴보겠습니다.
 
 - Local GIT 이용 시 (차기 차례일 때)
 
-  - (최초) Clone -> 새 Branch 만들기 -> 원격 저장소 와 연결 -> 만든 Branch로 switch -> `Game.txt` 파일 수정 -> Add -> Commit -> Push -> Pull Request -> Merge(Main Branch에 수정사항이 반영됨)
+  - (최초) Clone -> 새 Branch 만들기 -> 원격 저장소와 연결 -> 만든 Branch로 switch -> `Game.txt` 파일 수정 -> Add -> Commit -> Push -> Pull Request -> Merge(Main Branch에 수정사항이 반영됨) -> 만든 Branch 삭제
 
-  - (이후 다시 내 차례가 돌아오면) Main Branch로 변경 -> pull(Main의 파일을 받아와서 로컬에 저장합니다) -> 만들어둔 내 Branch로 이동하기 -> `Game.txt` 파일 수정 -> Add -> Commit -> Push -> Pull Request -> Merge
+  - (이후 다시 내 차례가 돌아오면) Main Branch로 변경 -> pull(Main의 파일을 받아와서 로컬에 저장합니다) -> 새 Branch 만들기 -> 원격 저장소와 연결 -> 만든 Branch로 switch -> `Game.txt` 파일 수정 -> Add -> Commit -> Push -> Pull Request -> Merge -> 만든 Branch 삭제
 
-- 실습이 모두 종료되면,
-  - 자신이 만든 branch를 삭제합니다.
+- **Branch를 삭제할 때 Main Branch를 삭제하지 않도록 유의해주세요!!!!**
 
 ---
